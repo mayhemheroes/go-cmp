@@ -1,0 +1,7 @@
+project: go-cmp
+target: FuzzDiff
+testsuite:
+  - file:///mayhem/mayhem/testsuite/fuzz_diff
+cmds:
+  - cmd: /mayhem/FuzzDiff
+    libfuzzer: true
