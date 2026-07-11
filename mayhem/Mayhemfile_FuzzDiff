@@ -1,0 +1,8 @@
+project: go-cmp
+target: FuzzDiff
+cmds:
+  - cmd: /mayhem/FuzzDiff
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/FuzzDiff/testsuite
